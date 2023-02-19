@@ -1,0 +1,266 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --black-color:#383838;
+    --white-color:#fff;
+    --blue-color:#2aadc5;
+    --orange-color:#fbb03b;
+    --dark-blue:#111322;
+    --light-blue:#171823;
+}
+/* =========general style==================== */
+.code a{
+    color: var(--blue-color) !important;transition: 0.5s;
+}
+.code a:hover{opacity: 0.7;}
+.container-fluid .title{background-color: var(--light-blue);}
+/*======================= header style================================ */
+.header .navbar{
+    background-color: transparent !important;
+    backdrop-filter: blur(5px);
+}
+.header .navbar-toggler{background-color: #fff !important;}
+.header .nav-item a:hover{color: var(--blue-color) !important;}
+.header .navbar-brand{
+    font-family: 'Lobster', cursive;
+    font-weight: bold;
+}
+.header .navbar-brand span{padding: 5px 10px 10px 5px;}
+.header .navbar-brand img{
+    width: 65px;
+    height: 50px;
+    margin-top: -12px;
+    margin-right: -5px;
+}
+.header .dropdown-menu{background-color: #ffffffd1 !important;}
+.header .dropdown-menu a{ color: var(--black-color) !important;}
+.header .btn-outline-success {
+    border: 1px solid var(--blue-color);
+    color: var(--blue-color);
+}
+.header .btn-outline-success:hover{
+    background-color: var(--blue-color);
+    border: 1px solid var(--blue-color);
+}
+.header .navBarColor{
+    background-color: var(--white-color) !important;  
+    transition: 0.5s;
+}
+/* ========js classlist========= */
+.header .nav-item .linksColor,
+.header .logoColor
+{
+    color: var(--black-color) !important;
+}
+.header .logoColor
+{
+   border-right: 1px solid #000;
+}
+.header .nav-item .linksColor:hover
+{
+  color: var(--orange-color) !important;
+}
+.header .dropdown-menu .dropBG:hover{
+    background-color: var(--black-color) !important;
+}
+.header .btns{
+    border: 1px solid var(--orange-color);
+    color: var(--orange-color);
+}
+.header .btns:hover{
+    background-color: var(--orange-color);
+    border: 1px solid var(--orange-color);
+}
+/*=================== main style============================*/
+.main .carousel-item{width: 100% !important;height: 100vh !important;} 
+.main .carousel-item img{height: 100vh;}
+.main .carousel-inner::after{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.553);
+}
+.main .carousel-caption{
+   background-color: #ffffff31;
+   width: 60%;
+   height: 180px;
+   bottom: 15px;
+   transform: translateX(-50%);
+   z-index: 1;
+}
+.main .carousel-item .carousel-caption p{font-size: 25px;}
+.main .carousel-caption .btn-primary{
+    width: 150px;
+    background-color: var(--blue-color);
+    border: 1px solid var(--blue-color) !important;
+    transition: 0.5s;
+}
+.main  .carousel-caption .btn-primary:hover{opacity: 0.8;}
+/* ===========about section============================== */
+.about{background-color:var(--dark-blue);}
+.about p{width: 40%;}
+.about h2{font-size: 40px;}
+.about .btn-primary{
+    background-color: var(--orange-color) !important;
+    border: 1px solid var(--orange-color) !important;
+    transition: 0.5s;
+}
+.about .btn-primary:hover{background-color: #fdc56c !important;}
+/* ==========prog-langs style============================ */
+.prog-langs,.language{background-color: var(--light-blue);}
+.prog-langs h2,.language h2,.courses .title h2,.team .title h2,.join-us .title h2{font-size: 35px;}
+.prog-langs .accordion-button:hover{
+    background-color: var(--light-blue) !important;
+    color: var(--white-color);
+}
+.language .code{background-color:var(--dark-blue);}
+.language .code .text-info{color: var(--orange-color) !important;}
+/* ===============img divider================================ */
+.img-divider{
+    background-image: url('../images/3.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 350px;
+    position: relative;
+}
+.img-divider::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #17182374;
+}
+/* ===============courses style============================== */
+.courses .cards,.team,.join-us{background-color: var(--dark-blue);}
+.courses .cards img{width: 100%;height: 300px;}
+.courses .card,.team .card,.join-us .card{
+    box-shadow: 0 0 10px #ffffff4a;
+    transition: 1s;
+}
+.team .card:hover,.join-us .card{box-shadow: none;}
+.courses .card:hover{
+    cursor: pointer;
+    transform: translateY(-10px);
+    box-shadow: none;
+}
+.courses .card .price{top:280px;width: 40px;height: 40px;line-height: 40px;
+background-color:var(--blue-color);
+border-radius: 5px 0 0 5px;
+}
+.courses .card .card-title,.team .card .card-title{color: var(--black-color);}
+.courses .card .card-info a{color: var(--blue-color);transition: 0.5s;}
+.courses .card .card-info a:hover{opacity: 0.7;}
+.courses .card .btn{background-color: var(--blue-color) !important;border: 1px solid var(--blue-color) !important;transition: 1s;}
+.courses .card .btn:hover{opacity: 0.8;}
+/* ==================team style=========================== */
+.team .card img{height: 230px;}
+.team .social-media i{
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    background-color: var(--orange-color);
+    transition: 1s;
+}
+.team .social-media i:hover{
+    width: 50px;
+    opacity: 0.8;
+    cursor: pointer;
+}
+/* ==============join us=================================== */
+.join-us .card a{text-decoration: none;color: var(--blue-color);transition: 0.5s;}
+.join-us .card a:hover{opacity: 0.7;}
+.join-us .card i{
+    width: 50px;height: 50px;line-height: 50px;border-radius: 50%;
+    box-shadow:0px 0px 20px 10px rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(0, 0, 0, 0.01);
+    font-size: 16px;
+    transition: 0.5s;
+}
+.join-us .card i:hover{background-color: #fff; color: #2aadc5;cursor: pointer;}
+.join-us .card{z-index: 1;}
+.join-us .card::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 15%;
+    background-color: #2aadc5;
+    border-radius: 10px 70px 70px 10px;
+    z-index: -1;
+    box-shadow: 2px 0px 2px #ccc;
+    transition: 1s;
+}
+.join-us .card:hover::after{width: 100%; border-radius: 5px;box-shadow: none;}
+.join-us .card:hover{transform: translateY(-5px);color: var(--white-color);}
+.join-us .card:hover i{box-shadow: none; border: 1px solid #fff;transform: scale(1.1);}
+.join-us .card:hover a{color: var(--white-color)}
+.join-us .card{background-image: url('../images/hero-bg.png');background-repeat: no-repeat;background-size: cover;}
+/* =============footer style================================ */
+.footer,.footer .card {background-color: var(--light-blue);border: none;}
+.footer .card img{width: 65px;height: 50px;}
+.footer .card .logo{font-family: 'Lobster', cursive;}
+.footer .card a{text-decoration: none;color: var(--blue-color);transition: 1s;}
+.footer .card a:hover{transform: translateX(5px);opacity: 0.7;}
+.footer .card h2{font-size: 30px;}
+.footer .copy-right span{ font-family: 'Lobster', cursive;}
+.footer .copy-right{border-top: 1px solid #383838;}
+/* =========media query=================================== */
+@media (max-width:992px) {
+    .header .container-fluid{position: relative;}
+    .header .navbar-brand span{
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        border: none !important;
+    }   
+    .header .navbar-brand img{margin-left: -10px;}
+    .main .carousel-caption{width: 90%;}
+    .main .carousel-item .carousel-caption p{font-size: 20px;}
+    .header .logoColor{border: none;}
+}
+@media (max-width:1254px){
+    .about p{width: 50%;}
+}
+@media (max-width:1012px){
+    .about p{width: 60%;}
+}
+@media (max-width:855px){
+    .about p{width: 70%;}
+}
+@media (max-width:740px){
+    .about h2{font-size: 35px;}
+    .about p{width: 70%;font-size: 14px;}
+}
+@media (max-width:650px){
+    .about p{width: 100%;}
+}
+@media (max-width:500px) {
+    .prog-langs h2,.language h2{font-size: 20px;}
+}
+@media (max-width:280px) {
+    .about h2{font-size: 30px;}
+    .about p{font-size: 10px;}
+    .prog-langs h2,.language h2,.courses .title h2{font-size: 16px;}
+    .language .code h4{font-size: 14px;}
+    .team   .card img{height: 180px;}
+    .team   .card h5{font-size: 16px;}
+    .team   .card p{font-size: 14px;}
+    .team   .social-media i{width: 30px;height: 30px;line-height: 30px;}
+    .team   .social-media i:hover{width: 40px;}
+    .footer .card h2{font-size: 20px;}
+    .footer .card span{font-size: 12px;}
+    .footer .card a{font-size: 14px;}
+}
+
+
